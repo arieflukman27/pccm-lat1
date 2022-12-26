@@ -9,7 +9,7 @@ jobs:
     
     - name: build and tag image
       run: |
-        docker build -t areiflukman27/github-action1:v1 -f Dockerfile .
+        docker build -t arieflukman27/github-action1:v1 -f Dockerfile .
     
     - name: push to dockerhub
       run: docker login -u ${{secrets.DOCKERHUB_USERNAME}} -p ${{secrets.DOCKERHUB_SECRET}} && docker push arieflukman27/github-action1:v1
